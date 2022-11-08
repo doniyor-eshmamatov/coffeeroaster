@@ -1,0 +1,123 @@
+.choose__inner {
+    padding: 112px 0 200px;
+    background-image: url('../images/choose-bgi.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.choose__title {
+    margin: 0 0 32px;
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+}
+
+.choose__text {
+    max-width: 540px;
+    margin: 0 auto 86px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FEFCF7;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.choose__list {
+    padding: 0 60px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.choose-card {
+    max-width: 320px;
+    padding: 200px 10px 48px;
+    background-color: #0E8784;
+    background-image: url('../images/choose-card-bgi.png');
+    background-repeat: no-repeat;
+    background-position: center top 72px;
+    border-radius: 8px;
+    text-align: center;
+
+    &:nth-child(2) {
+        background-image: url('../images/choose-card-bgi2.png');
+    }
+
+    &:last-child {
+        background-image: url('../images/choose-card-bgi3.png');
+    }
+}
+
+.choose-card__title {
+    margin: 0 0 24px;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FEFCF7;
+}
+
+.choose-card__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+@include max-width(768px) {
+    .choose__inner {
+        padding: 60px 0 140px;
+    }
+    
+    .choose__text {
+        margin: 0 auto 60px;
+    }
+
+    .choose__list {
+        flex-direction: column;
+    }
+
+    .choose-card {
+        max-width: 573px;
+        padding: 41px 48px 41px 180px;
+        background-position: center left 70px;
+        text-align: start;
+    }
+    
+    .choose-card + .choose-card {
+        margin-top: 24px;
+    }
+}
+
+@include max-width(576px) {
+    .choose__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .choose__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .choose__list {
+        padding: 0;
+        align-items: center;
+    }
+
+    .choose-card {
+        max-width: 279px;
+        padding: 200px 0 50px;
+        background-position: center top 70px;
+        text-align: center;
+    }
+}
