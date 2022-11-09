@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap"
+        rel="stylesheet">
+    <title>Create your plan</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+                <a class="logo" href="./index.html">
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="./images/logo-mobile.svg" />
+                        <img class="logo__img" alt="site logo" src="./images/logo.svg" />
+                    </picture>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="./index.html"> Home </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./about.html"> About Us </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./plan.html"> Create your plan </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="site-header__menu"></button>
+            </div>
+        </div>
+    </header>
+    <section class="plan-hero">
+        <div class="container">
+            <div class="plan-hero__inner">
+                <div class="plan-hero__content">
+                    <h2 class="plane-hero__title">
+                        Create a plan
+                    </h2>
+                    <p class="plane-hero__text">
+                        Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For whatever brew method you use. For choice, for convenience, for quality.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="work plan-work">
+        <div class="container">
+            <div class="work__inner plan-work__inner">
+                <div class="work__top">
+                    <img src="./images/work-circle.svg" alt="circle">
+                    <img src="./images/work-circle.svg" alt="circle">
+                    <img src="./images/work-circle.svg" alt="circle">
+                    <div class="work__brline"></div>
+                </div>
+                <div class="work__content">
+                    <div class="work__card work-card">
+                        <p class="work-card__number">
+                            01
+                        </p>
+                        <h3 class="work-card__title plan-work__title">
+                            Pick your coffee
+                        </h3>
+                        <p class="work-card__text plan-work__text">
+                            Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.
+                        </p>
+                    </div>
+                    <div class="work__card work-card">
+                        <p class="work-card__number">
+                            02
+                        </p>
+                        <h3 class="work-card__title plan-work__title">
+                            Choose the frequency
+                        </h3>
+                        <p class="work-card__text plan-work__text">
+                            Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.
+                        </p>
+                    </div>
+                    <div class="work__card work-card">
+                        <p class="work-card__number">
+                            03
+                        </p>
+                        <h3 class="work-card__title plan-work__title">
+                            Receive and enjoy!
+                        </h3>
+                        <p class="work-card__text plan-work__text">
+                            We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select">
+        <div class="container">
+            <div class="select__inner">
+                <ul class="select__nav">
+                    <li class="select__navitem">
+                        <span>01</span>Preferences
+                    </li>
+                    <li class="select__navitem">
+                        <span>02</span>Bean Type
+                    </li>
+                    <li class="select__navitem">
+                        <span>03</span>Quantity
+                    </li>
+                    <li class="select__navitem">
+                        <span>04</span>Grind Option
+                    </li>
+                    <li class="select__navitem">
+                        <span>05</span>Deliveries
+                    </li>
+                </ul>
+                <form class="select__right" action="https://echo.htmlacademy.ru/" method="POST" auto-complate="of">
+                    <details class="select__content select-content" open>
+                        <summary class="select-content__top">
+                            <h2 class="select-content__title">How do you drink your coffee?</h2>
+                        </summary>
+                        <div class="select-content__bottom">
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How do you drink your coffee?"
+                                    value="capsule"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Capsule</h3>
+                                    <p class="card__text">
+                                        Compatible with Nespresso systems and similar brewers
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How do you drink your coffee?"
+                                    value="filter"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Filter</h3>
+                                    <p class="card__text">
+                                        For pour over or drip methods like Aeropress, Chemex, and V60
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How do you drink your coffee?"
+                                    value="espresso"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card"> 
+                                    <h3 class="card__title">Espresso</h3>
+                                    <p class="card__text">
+                                        Dense and finely ground beans for an intense, flavorful experience
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="select__content select-content">
+                        <summary class="select-content__top">
+                            <h2 class="select-content__title">What type of coffee?</h2>
+                        </summary>
+                        <div class="select-content__bottom">
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="What type of coffee?"
+                                    value="Single Origin"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Single Origin</h3>
+                                    <p class="card__text">
+                                        Distinct, high quality coffee from a specific family-owned farm
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="What type of coffee?"
+                                    value="filter"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Filter</h3>
+                                    <p class="card__text">
+                                        Just like regular coffee, except the caffeine has been removed
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="What type of coffee?"
+                                    value="Blended"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card"> 
+                                    <h3 class="card__title">Blended</h3>
+                                    <p class="card__text">
+                                        Combination of two or three dark roasted beans of organic coffees
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="select__content select-content">
+                        <summary class="select-content__top">
+                            <h2 class="select-content__title">How much would you like?</h2>
+                        </summary>
+                        <div class="select-content__bottom">
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How much would you like?"
+                                    value="250g"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">250g</h3>
+                                    <p class="card__text">
+                                        Perfect for the solo drinker. Yields about 12 delicious cups.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How much would you like?"
+                                    value="500g"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">500g</h3>
+                                    <p class="card__text">
+                                        Perfect option for a couple. Yields about 40 delectable cups.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How much would you like?"
+                                    value="1000g"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card"> 
+                                    <h3 class="card__title">1000g</h3>
+                                    <p class="card__text">
+                                        Perfect for offices and events. Yields about 90 delightful cups.
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="select__content select-content">
+                        <summary class="select-content__top">
+                            <h2 class="select-content__title">Want us to grind them?</h2>
+                        </summary>
+                        <div class="select-content__bottom">
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="Want us to grind them?"
+                                    value="Wholebean"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Wholebean</h3>
+                                    <p class="card__text">
+                                        Best choice if you cherish the full sensory experience
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="Want us to grind them?"
+                                    value="filter"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Filter</h3>
+                                    <p class="card__text">
+                                        For drip or pour-over coffee methods such as V60 or Aeropress
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="Want us to grind them?"
+                                    value="Cafetiére"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card"> 
+                                    <h3 class="card__title">Cafetiére</h3>
+                                    <p class="card__text">
+                                        Course ground beans specially suited for french press coffee
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </details>
+                    <details class="select__content select-content">
+                        <summary class="select-content__top">
+                            <h2 class="select-content__title">How often should we deliver?</h2>
+                        </summary>
+                        <div class="select-content__bottom">
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How often should we deliver?"
+                                    value="Every week"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Every week</h3>
+                                    <p class="card__text">
+                                        $7.20 per shipment. Includes free first-class shipping.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                    class="select-content__input visually-hidden"
+                                    name="How often should we deliver?"
+                                    value="Every 2 weeks"
+                                    type="radio"
+                                />
+                                <div class="select-content__card card"> 
+                                    <h3 class="card__title">Every 2 weeks</h3>
+                                    <p class="card__text">
+                                        $9.60 per shipment. Includes free priority shipping.
+                                    </p>
+                                </div>
+                            </label>
+                            <label class="select-content__label">
+                                <input
+                                class="select-content__input visually-hidden"
+                                name="How often should we deliver?"
+                                value="Every month"
+                                type="radio"
+                                />
+                                <div class="select-content__card card">
+                                    <h3 class="card__title">Every month</h3>
+                                    <p class="card__text">
+                                        $12.00 per shipment. Includes free priority shipping.
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </details>
+                    <div class="selected select__content select-content">
+                        <p class="selected__title">
+                            ORDER SUMMARY
+                        </p>
+                        <p class="selected__content">
+                            “I drink my coffee using <span>Capsules</span>,
+                            with a <span class="selected__line">_____</span>
+                            type of bean. <span class="selected__line">_____</span> ,
+                            sent to me <span class="selected__line">_____</span>.”
+                        </p>
+                    </div>
+                    <div class="select__btnbox">
+                        <button class="select__button" type="submit">Create my plan!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer__inner">
+            <a class="logo" href="./index.html">
+                <picture>
+                    <source media="(max-width: 576px)" srcset="./images/white-logo-mobile.svg" />
+                    <img class="logo__img" alt="site logo" src="./images/white-logo.svg" />
+                </picture>
+            </a>
+            <ul class="site-footer__navlist">
+                <li class="site-footer__navitem">
+                    <a class="site-footer__navlink" href="./index.html">home</a>
+                </li>
+                <li class="site-footer__navitem">
+                    <a class="site-footer__navlink" href="./about.html">about us</a>
+                </li>
+                <li class="site-footer__navitem">
+                    <a class="site-footer__navlink" href="./plan.html">Create your plan</a>
+                </li>
+            </ul>
+            <div class="site-footer__socials">
+                <a class="site-footer__sociallink" href="https://www.facebook.com/doniyorbekeshmamatov" >
+                    <img src="./images/facebook.svg" alt="Facebook">
+                </a>
+                <a class="site-footer__sociallink" href="https://www.twitter.com/login" >
+                    <img src="./images/twitter-footer.svg" alt="twitter">
+                </a>
+                <a class="site-footer__sociallink" href="https://www.instagram.com/doniyor.dev_" >
+                    <img src="./images/instagram.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
